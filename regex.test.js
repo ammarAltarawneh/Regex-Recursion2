@@ -6,7 +6,7 @@
 characters (no numbers and symbols) and it should end with capital A else return false */
 
 function capitalA(s) {
-    let regex = /^[A-Za-z]*[A]$/;
+    let regex = /^[A-Za-z\s]*A[A-Za-z\s]*$/;
     let status = regex.test(s);
     return status;
 }
